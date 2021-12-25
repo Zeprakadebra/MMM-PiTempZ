@@ -1,22 +1,22 @@
 # MMM-PiTempZ
-This MagicMirror2 modul is under construction.
+This MagicMirror2 module is under construction. It is currently delivering same functionality of its forked origin. To get more than that please come back later when my piece of work is done. Til that enjoy what you can expect in future:
 
-MMM-PiTempZ is an origin Fork of [MMM-PiTempZ from ckoutavas](https://github.com/ckoutavas/MMM-PiTemp).
+MMM-PiTempZ is an origin fork of [MMM-PiTemp from ckoutavas](https://github.com/ckoutavas/MMM-PiTemp).
 
-As the Fork this module works in conjunction with MagicMirror2, it tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. Please know that this is a work in progress.
+Like the origin this module works in conjunction with MagicMirror2: it tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. As the origin please notice, that this is a work in progress by ckoutavas.
 
-Extending ckoutavas functionality I am going to add fan control for hosted raspberrry Pis in housing environments with the need to control the fan via soft pwm.
+Extending his functionality I added fan control, especially for raspberrry Pis in housing environments without any free PWM-Pin.
 
-This module is going to display the cpu temperature and additionally the current fan speed.
+MMM-PiTempZ displays cpu temp AND current fan speed.
 
-![PiTemp_img](https://github.com/Zeprakadebra/MMM-PiTemp/blob/master/PiTempZ.PNG)
+![PiTemp_img](https://github.com/Zeprakadebra/MMM-PiTempZ/blob/master/PiTempZ.PNG)
 
-I run my MagicMirror2 on a LABISTS Raspberry Pi4B 8GB RAM and this hardware is known to produce high temp even in unbusy state and in housing environments like I built. So I try to keep the hardware cool down by controlling the fan speed of two connected Noctua NF-A9 5V PWM Axial-Fans (92mm) using [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm) using [pigpio from fivdi](https://github.com/fivdi/pigpio). This should keep the hardware cool down to 30-35°C under all conditions. ;-)
+The PWM-Signal is created codebased using [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm) based on [pigpio from fivdi](https://github.com/fivdi/pigpio). The signal strength depends on thresholds defined in config file (high / low, fast / slow).
 
 # Install
-1. Change the the directory to MagicMirror/modules: ```$ cd MagicMirror/modules```
+1. Change the directory to MagicMirror/modules: ```$ cd MagicMirror/modules```
 2. Clone this repo: ```$ git clone https://github.com/Zeprakadebra/MMM-PiTempZ```
-3. List the contents of MagicMirror/modules to make sure that MMM-PiTemp was cloned: ```$ ls```
+3. List the contents of MagicMirror/modules to make sure that MMM-PiTempZ was cloned: ```$ ls```
 4. Change the directory to MagicMirror/config: ```$ cd ~/MagicMirror/config```
 5. Modify your config.js file and add the MMM-PiTemp module: ```$ sudo nano config.js```
     
@@ -66,6 +66,20 @@ If everything runs as expected you can customize the config param based on the t
 <td>70</td>
 <td>int</td>
 <td>This param is used to assign the color to a range: If cpu_temp is less than low then lowColor</td>
+</tr>
+
+<tr>
+<td>fast</td>
+<td>2000</td>
+<td>int</td>
+<td>This param is used to define the maximum rotation speed of the connected fan. This rotation will be reached when reaching high temp.</td>
+</tr>
+
+<tr>
+<td>slow</td>
+<td>400</td>
+<td>int</td>
+<td>This param is used to define the minimum rotation speed of the connected fan. This rotation will be used when reaching low temp.</td>
 </tr>
 
 <tr>
