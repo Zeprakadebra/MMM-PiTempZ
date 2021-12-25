@@ -13,7 +13,7 @@ Extending ckoutavas functionality I am going to add fan control to this modul fo
 
 I run my MagicMirror2 on a LABISTS Raspberry Pi4B 8GB RAM and this hardware is known to produce high temp. So I try to keep the hardware cool down by this modul addition in order to control two Noctua NF-A9 5V PWM Axial-Fan 92mm using raspi-soft-pwm from nebrius using pigpio from fivdi.
 
-![PiTemp_img](https://github.com/ckoutavas/MMM-PiTemp/blob/master/PiTempZ.png)
+![PiTemp_img](https://github.com/ckoutavas/MMM-PiTemp/blob/master/PiTempZ.PNG)
 
 # Install
 1. Change the the directory to MagicMirror/modules: ```$ cd MagicMirror/modules```
