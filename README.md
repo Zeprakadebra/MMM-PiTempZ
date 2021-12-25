@@ -1,5 +1,7 @@
-# MMM-PiTemp
-MMM-PiTemp works in conjunction with MagicMirror2 and tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. Please know that this is a work in progress.
+# MMM-PiTempZ
+MMM-PiTempZ will be an origin Fork of MMM-PiTempZ from ckoutavas.
+
+As the Fork works in conjunction with MagicMirror2, it tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. Please know that this is a work in progress.
 
 ![PiTemp_img](https://github.com/ckoutavas/MMM-PiTemp/blob/master/PiTemp2.png)
 
@@ -7,9 +9,15 @@ MMM-PiTemp works in conjunction with MagicMirror2 and tells you the temperature 
 
 ![PiTemp_img](https://github.com/ckoutavas/MMM-PiTemp/blob/master/PiTemp3.png)
 
+Extending ckoutavas functionality I am going to add fan control to this modul for hosted raspberrry Pis in housing environments with additionally displayed informations about the current fan speed.
+
+I run my MagicMirror2 on a LABISTS Raspberry Pi4B 8GB RAM and this hardware is known to produce high temp. So I try to keep the hardware cool down by this modul addition in order to control two Noctua NF-A9 5V PWM Axial-Fan 92mm using raspi-soft-pwm from nebrius using pigpio from fivdi.
+
+![PiTemp_img](https://github.com/ckoutavas/MMM-PiTemp/blob/master/PiTempZ.png)
+
 # Install
 1. Change the the directory to MagicMirror/modules: ```$ cd MagicMirror/modules```
-2. Clone this repo: ```$ git clone https://github.com/ckoutavas/MMM-PiTemp```
+2. Clone this repo: ```$ git clone https://github.com/Zeprakadebra/MMM-PiTempZ```
 3. List the contents of MagicMirror/modules to make sure that MMM-PiTemp was cloned: ```$ ls```
 4. Change the directory to MagicMirror/config: ```$ cd ~/MagicMirror/config```
 5. Modify your config.js file and add the MMM-PiTemp module: ```$ sudo nano config.js```
@@ -19,7 +27,7 @@ The basic config should look like this
 
 ```
 {
-    module: "MMM-PiTemp",
+    module: "MMM-PiTempZ",
     position: "top_right",
     config: {}
 },
