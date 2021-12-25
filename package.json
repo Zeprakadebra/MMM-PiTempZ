@@ -1,0 +1,31 @@
+{
+  "name": "mmm-pitempz",
+  "version": "1.0.0",
+  "description": "A MagicMirror2 module displaying and controlling raspberry temperature",
+  "keywords": [
+    "magic mirror",
+    "MagicMirror2",
+    "cpu temprerature",
+    "fan control"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zeprakadebra/MMM-PiTempZ.git"
+  },
+  "author": "Zeprakadebra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zeprakadebra/MMM-PiTempZ/issues"
+  },
+  "homepage": "https://github.com/Zeprakadebra/MMM-PiTempZ#readme",
+  "dependencies": {
+    "raspi": "^6.0.1",
+    "raspi-soft-pwm": "^6.0.2"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^2.3.5"
+  }
+}
