@@ -11,7 +11,7 @@ MMM-PiTempZ displays cpu temp AND current fan speed.
 
 ![PiTemp_img](https://github.com/Zeprakadebra/MMM-PiTemp/blob/master/PiTempZ.PNG)
 
-The PWM-Signal is created by [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm) based on [pigpio from fivdi](https://github.com/fivdi/pigpio). The signal strength depends on thresholds defined in config file (high / low, fast / slow).
+The PWM-Signal is created codebased using [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm) based on [pigpio from fivdi](https://github.com/fivdi/pigpio). The signal strength depends on thresholds defined in config file (high / low, fast / slow).
 
 # Install
 1. Change the directory to MagicMirror/modules: ```$ cd MagicMirror/modules```
