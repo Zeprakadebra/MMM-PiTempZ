@@ -11,7 +11,7 @@ As the Fork works in conjunction with MagicMirror2, it tells you the temperature
 
 Extending ckoutavas functionality I am going to add fan control to this modul for hosted raspberrry Pis in housing environments with additionally displayed informations about the current fan speed.
 
-I run my MagicMirror2 on a LABISTS Raspberry Pi4B 8GB RAM and this hardware is known to produce high temp. So I try to keep the hardware cool down by this modul addition in order to control two Noctua NF-A9 5V PWM Axial-Fan 92mm using raspi-soft-pwm from nebrius using pigpio from fivdi.
+I run my MagicMirror2 on a LABISTS Raspberry Pi4B 8GB RAM and this hardware is known to produce high temp. So I try to keep the hardware cool down by this modul addition in order to control two Noctua NF-A9 5V PWM Axial-Fan 92mm using [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm)  using [pigpio from fivdi](https://github.com/fivdi/pigpio).
 
 ![PiTemp_img](https://github.com/Zeprakadebra/MMM-PiTemp/blob/master/PiTempZ.PNG)
 
