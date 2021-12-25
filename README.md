@@ -3,15 +3,15 @@ This MagicMirror2 modul is under construction. It is currently not working. Plea
 
 MMM-PiTempZ is an origin Fork of [MMM-PiTempZ from ckoutavas](https://github.com/ckoutavas/MMM-PiTemp).
 
-As the Fork this module works in conjunction with MagicMirror2, it tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. Please know that this is a work in progress.
+Like the origin this module works in conjunction with MagicMirror2: it tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. As the origin please notice, that this is a work in progress by ckoutavas.
 
-Extending ckoutavas functionality I add fan control, especially for raspberrry Pis in housing environments with no free PWM-Pin.
+Extending his functionality I added fan control, especially for raspberrry Pis in housing environments without any free PWM-Pin.
 
-This module displays the cpu temperature AND additionally the current fan speed.
+MMM-PiTempZ displays cpu temp AND current fan speed.
 
 ![PiTemp_img](https://github.com/Zeprakadebra/MMM-PiTemp/blob/master/PiTempZ.PNG)
 
-The PWM-Signal is created by [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm) based on [pigpio from fivdi](https://github.com/fivdi/pigpio). The signal strength depends on the thresholds and minimum / maximum rotation speed defined in the config file.
+The PWM-Signal is created by [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm) based on [pigpio from fivdi](https://github.com/fivdi/pigpio). The signal strength depends on thresholds defined in config file (high / low, fast / slow).
 
 # Install
 1. Change the directory to MagicMirror/modules: ```$ cd MagicMirror/modules```
