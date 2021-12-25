@@ -3,15 +3,15 @@ This MagicMirror2 modul is under construction.
 
 MMM-PiTempZ is an origin Fork of [MMM-PiTempZ from ckoutavas](https://github.com/ckoutavas/MMM-PiTemp).
 
-As the Fork this modul works in conjunction with MagicMirror2, it tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. Please know that this is a work in progress.
+As the Fork this module works in conjunction with MagicMirror2, it tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. Please know that this is a work in progress.
 
 Extending ckoutavas functionality I am going to add fan control for hosted raspberrry Pis in housing environments with the need to control the fan via soft pwm.
 
-This modul is going to display additional information about the current fan speed.
+This module is going to display the cpu temperature and additionally the current fan speed.
 
 ![PiTemp_img](https://github.com/Zeprakadebra/MMM-PiTemp/blob/master/PiTempZ.PNG)
 
-I run my MagicMirror2 on a LABISTS Raspberry Pi4B 8GB RAM and this hardware is known to produce high temp even in unbusy state and in housing environments like I built. So I try to keep the hardware cool down by controlling the fan speed of two Noctua NF-A9 5V PWM Axial-Fan 92mm using [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm) using [pigpio from fivdi](https://github.com/fivdi/pigpio). This should keep the hardware cool down to 30-35°C under all conditions. ;-)
+I run my MagicMirror2 on a LABISTS Raspberry Pi4B 8GB RAM and this hardware is known to produce high temp even in unbusy state and in housing environments like I built. So I try to keep the hardware cool down by controlling the fan speed of connected two Noctua NF-A9 5V PWM Axial-Fan 92mm using [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm) using [pigpio from fivdi](https://github.com/fivdi/pigpio). This should keep the hardware cool down to 30-35°C under all conditions. ;-)
 
 # Install
 1. Change the the directory to MagicMirror/modules: ```$ cd MagicMirror/modules```
