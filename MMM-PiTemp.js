@@ -26,7 +26,7 @@ Module.register("MMM-PiTemp", {
 	 	switch(notification) {
       			case "DOM_OBJECTS_CREATED":
         		var timer = setInterval(()=>{
-				this.sendSocketNotification("get_temp")
+					this.sendSocketNotification("get_temp")
         		}, this.config.freq)
         		break
     		}
