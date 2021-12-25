@@ -5,16 +5,16 @@ MMM-PiTempZ is an origin Fork of [MMM-PiTempZ from ckoutavas](https://github.com
 
 As the Fork this module works in conjunction with MagicMirror2, it tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. Please know that this is a work in progress.
 
-Extending ckoutavas functionality I am going to add fan control for hosted raspberrry Pis in housing environments with the need to control the fan via soft pwm.
+Extending ckoutavas functionality I add fan control, especially for raspberrry Pis in housing environments with no free PWM-Pin.
 
-This module is going to display the cpu temperature and additionally the current fan speed.
+This module displays the cpu temperature AND additionally the current fan speed.
 
 ![PiTemp_img](https://github.com/Zeprakadebra/MMM-PiTemp/blob/master/PiTempZ.PNG)
 
-I run my MagicMirror2 on a LABISTS Raspberry Pi4B 8GB RAM and this hardware is known to produce high temp even in unbusy state and in housing environments like I built. So I try to keep the hardware cool down by controlling the fan speed of two connected Noctua NF-A9 5V PWM Axial-Fans (92mm) using [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm) using [pigpio from fivdi](https://github.com/fivdi/pigpio). This should keep the hardware cool down to 30-35°C under all conditions. ;-)
+The PWM-Signal is created by [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm) based on [pigpio from fivdi](https://github.com/fivdi/pigpio). The signal strength depends on the thresholds and minimum / maximum rotation speed defined in the config file.
 
 # Install
-1. Change the the directory to MagicMirror/modules: ```$ cd MagicMirror/modules```
+1. Change the directory to MagicMirror/modules: ```$ cd MagicMirror/modules```
 2. Clone this repo: ```$ git clone https://github.com/Zeprakadebra/MMM-PiTempZ```
 3. List the contents of MagicMirror/modules to make sure that MMM-PiTemp was cloned: ```$ ls```
 4. Change the directory to MagicMirror/config: ```$ cd ~/MagicMirror/config```
