@@ -1,7 +1,7 @@
 # MMM-PiTempZ
-This MagicMirror2 modul is under construction. It is currently not working. Please come back later to check if the work is ready to rumble. Til that enjoy what you may expect when using it in the future:
+This MagicMirror2 module is under construction. It is currently working with the known functionality of its forked origin. To use the additional functionality please come back later when my piece of work is ready to rumble. Til that enjoy what you can expect when using it later:
 
-MMM-PiTempZ is an origin Fork of [MMM-PiTempZ from ckoutavas](https://github.com/ckoutavas/MMM-PiTemp).
+MMM-PiTempZ is an origin fork of [MMM-PiTempZ from ckoutavas](https://github.com/ckoutavas/MMM-PiTemp).
 
 Like the origin this module works in conjunction with MagicMirror2: it tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. As the origin please notice, that this is a work in progress by ckoutavas.
 
