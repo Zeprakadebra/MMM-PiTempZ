@@ -69,6 +69,20 @@ If everything runs as expected you can customize the config param based on the t
 </tr>
 
 <tr>
+<td>fast</td>
+<td>2000</td>
+<td>int</td>
+<td>This param is used to define the maximum rotation speed of the connected fan. This rotation will be reached when measuring the high temp, defined.</td>
+</tr>
+
+<tr>
+<td>slow</td>
+<td>400</td>
+<td>int</td>
+<td>This param is used to define the minimum rotation speed of the connected fan. This rotation will be used when measuring the low temp, defined.</td>
+</tr>
+
+<tr>
 <td>highColor</td>
 <td>"red"</td>
 <td>str</td>
