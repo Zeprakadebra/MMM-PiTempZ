@@ -1,5 +1,5 @@
 # MMM-PiTempZ
-This MagicMirror2 modul is under construction.
+This MagicMirror2 modul is under construction. It is currently not working. Please come back later to check if the work is ready to rumble. Til that enjoy what you may expect when using it in the future:
 
 MMM-PiTempZ is an origin Fork of [MMM-PiTempZ from ckoutavas](https://github.com/ckoutavas/MMM-PiTemp).
 
