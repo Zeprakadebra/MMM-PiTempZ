@@ -11,7 +11,7 @@ This module is going to display the cpu temperature and additionally the current
 
 ![PiTemp_img](https://github.com/Zeprakadebra/MMM-PiTemp/blob/master/PiTempZ.PNG)
 
-I run my MagicMirror2 on a LABISTS Raspberry Pi4B 8GB RAM and this hardware is known to produce high temp even in unbusy state and in housing environments like I built. So I try to keep the hardware cool down by controlling the fan speed of connected two Noctua NF-A9 5V PWM Axial-Fan 92mm using [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm) using [pigpio from fivdi](https://github.com/fivdi/pigpio). This should keep the hardware cool down to 30-35°C under all conditions. ;-)
+I run my MagicMirror2 on a LABISTS Raspberry Pi4B 8GB RAM and this hardware is known to produce high temp even in unbusy state and in housing environments like I built. So I try to keep the hardware cool down by controlling the fan speed of two connected Noctua NF-A9 5V PWM Axial-Fans (92mm) using [raspi-soft-pwm from nebrius](https://github.com/nebrius/raspi-soft-pwm) using [pigpio from fivdi](https://github.com/fivdi/pigpio). This should keep the hardware cool down to 30-35°C under all conditions. ;-)
 
 # Install
 1. Change the the directory to MagicMirror/modules: ```$ cd MagicMirror/modules```
