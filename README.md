@@ -5,12 +5,6 @@ MMM-PiTempZ is an origin Fork of [MMM-PiTempZ from ckoutavas](https://github.com
 
 As the Fork this modul works in conjunction with MagicMirror2, it tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. Please know that this is a work in progress.
 
-![PiTemp_img](https://github.com/Zeprakadebra/MMM-PiTemp/blob/master/PiTemp2.png)
-
-![PiTemp_img](https://github.com/Zeprakadebra/MMM-PiTemp/blob/master/PiTemp.png)
-
-![PiTemp_img](https://github.com/Zeprakadebra/MMM-PiTemp/blob/master/PiTemp3.png)
-
 Extending ckoutavas functionality I am going to add fan control for hosted raspberrry Pis in housing environments with the need to control the fan via soft pwm.
 
 This modul is going to display additional information about the current fan speed.
