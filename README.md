@@ -1,13 +1,11 @@
 # MMM-PiTempZ
-This MagicMirror2 module is under construction. It is currently delivering same functionality of its forked origin. To get more than that please come back later when my piece of work is done. Til that enjoy what you can expect in future:
+This module is an origin fork of [MMM-PiTemp from ckoutavas](https://github.com/ckoutavas/MMM-PiTemp).
 
-MMM-PiTempZ is an origin fork of [MMM-PiTemp from ckoutavas](https://github.com/ckoutavas/MMM-PiTemp).
+Like the origin MMM-PiTempZ works in conjunction with MagicMirror2: it tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. As the origin please notice, that this is a work in progress by ckoutavas.
 
-Like the origin this module works in conjunction with MagicMirror2: it tells you the temperature of your raspberry pi's CPU. It runs every 60 seconds and is color-coded based on the temperature. If the temperature is ever greater than 85 degrees then the pi shuts down. As the origin please notice, that this is a work in progress by ckoutavas.
+Extending ckoutavas functionality I added fan control, especially for raspberrry Pis in housing environments without any free PWM-Pin.
 
-Extending his functionality I added fan control, especially for raspberrry Pis in housing environments without any free PWM-Pin.
-
-MMM-PiTempZ displays cpu temp AND current fan speed.
+So MMM-PiTempZ displays cpu temp AND current fan speed.
 
 ![PiTemp_img](https://github.com/Zeprakadebra/MMM-PiTempZ/blob/master/PiTempZ.PNG)
 

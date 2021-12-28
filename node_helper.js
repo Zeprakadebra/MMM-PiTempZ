@@ -10,7 +10,7 @@ module.exports = NodeHelper.create({
       fan.mode = Gpio.OUTPUT;
       setInterval(() => {
         fan.write(this.fan_signal);
-      },1000);
+      },200);
   },
 
   socketNotificationReceived: function(notification, payload) {
