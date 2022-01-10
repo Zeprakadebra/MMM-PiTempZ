@@ -2,8 +2,8 @@ Module.register("MMM-PiTempZ", {
 	defaults: {
 		tempUnit: "C",
     	freq: 60000,
-    	high: 80,
-    	low: 70,
+    	high: 60,
+    	low: 20,
 		slow: 400,
 		fast: 2000,
     	highColor: "red",
@@ -58,6 +58,7 @@ Module.register("MMM-PiTempZ", {
 
 				if (temp >= low && temp <= high) {
 					speed = slow + (temp - low) * capa / range;
+					signal = speed / fast;
 				}
 
 				if (temp > high) {

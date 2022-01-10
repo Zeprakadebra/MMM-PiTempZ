@@ -6,10 +6,10 @@ const pwm = require('raspi-soft-pwm');
 module.exports = NodeHelper.create({
   start: function() {
       this.fan_signal = 0;
-      //const fan = new pwm.SoftPWM('GPIO17');
-      // fan.mode = Gpio.OUTPUT;
+      const fan = new pwm.SoftPWM('GPIO23');
+      fan.mode = Gpio.OUTPUT;
       setInterval(() => {
-        // fan.write(this.fan_signal);
+        fan.write(this.fan_signal);
       },200);
   },
 
