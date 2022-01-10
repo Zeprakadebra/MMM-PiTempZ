@@ -1,4 +1,4 @@
-Module.register("MMM-PiTemp", {
+Module.register("MMM-PiTempZ", {
 	defaults: {
 		tempUnit: "C",
     	freq: 60000,

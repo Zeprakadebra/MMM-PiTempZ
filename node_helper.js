@@ -6,10 +6,10 @@ const pwm = require('raspi-soft-pwm');
 module.exports = NodeHelper.create({
   start: function() {
       this.fan_signal = 0;
-      const fan = new pwm.SoftPWM('GPIO17');
-      fan.mode = Gpio.OUTPUT;
+      //const fan = new pwm.SoftPWM('GPIO17');
+      // fan.mode = Gpio.OUTPUT;
       setInterval(() => {
-        fan.write(this.fan_signal);
+        // fan.write(this.fan_signal);
       },200);
   },
 
@@ -25,7 +25,7 @@ module.exports = NodeHelper.create({
   },
   
   job: function() {
-    var process = spawn("python3", ["/home/pi/MagicMirror/modules/MMM-PiTemp/temp.py"])
+    var process = spawn("python3", ["/home/pi/MagicMirror/modules/MMM-PiTempZ/temp.py"])
     process.stdout.on("data", (data)=>{
       console.log(data)
       this.sendSocketNotification("temperature", data.toString())
